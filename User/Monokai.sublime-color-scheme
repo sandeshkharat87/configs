@@ -1,0 +1,37 @@
+{
+    "globals":
+    {
+
+        "background":"#242426",
+
+
+    },
+
+    "rules": [
+        {
+
+            "scope": "keyword.other",
+            "font_style": "bold",
+        },
+
+        {
+            "scope": "keyword",
+            "font_style": "bold",
+        },
+
+        {
+            "scope": "storage.type.function",
+            "font_style": "italic bold",
+        },
+
+        {
+            "scope": "storage.type.class",
+            "font_style": "italic bold",
+        },
+
+    ],
+
+
+
+
+}

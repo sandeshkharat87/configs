@@ -1,0 +1,46 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"10% Too Dull for My Tastes Color Scheme",
+		"A File Icon",
+		"AdvancedNewFile",
+		"Anaconda",
+		"Antescofo",
+		"Bootstrap 3 Autocomplete",
+		"Bootstrap 4 Autocomplete",
+		"Bootstrap 4 Snippets",
+		"BracketHighlighter",
+		"Dracula Color Scheme",
+		"Emmet",
+		"FileIcons",
+		"FileIcons Mono",
+		"HTML5",
+		"HTMLBeautify",
+		"Java Bytecode",
+		"Java Velocity",
+		"Jinja2",
+		"Kotlin",
+		"NeoVintageous",
+		"One Dark Color Scheme",
+		"Package Control",
+		"PackageDev",
+		"ProjectManager",
+		"Python Debugger",
+		"Quick File Creator",
+		"SideBarEnhancements",
+		"SideBarMenuAdvanced",
+		"Six",
+		"Terminal",
+		"Terminus",
+		"Theme - Afterglow",
+		"Theme - Brogrammer",
+		"Theme - Hero",
+		"ToDone",
+		"ToggleNeoVintageous",
+		"YASMJinja2"
+	]
+}

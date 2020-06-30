@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+$1
+
+{% endblock content %}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>el</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html</scope>
+</snippet>
