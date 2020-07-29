@@ -1,0 +1,30 @@
+[
+    { "keys": ["alt+x","g","g"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+    { "keys": ["alt+x","G"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+
+    { "keys": ["alt+x","v","v"], "command": "move_to", "args": {"to": "bof", "extend": true} },
+    { "keys": ["alt+x","V"], "command": "move_to", "args": {"to": "eof", "extend": true} },
+    { "keys": ["alt+x","a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+    { "keys": ["alt+x","e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+    { "keys": ["alt+x","<"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+    { "keys": ["alt+x",">"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+
+
+    {
+        "keys": ["ctrl+alt+/"], "command": "toggle_terminus_panel",
+
+        "args": {
+            "cwd": "${file_path:${folder}}"
+        }
+
+
+    },
+
+
+    {
+    "keys": ["ctrl+w"], "command": "terminus_close", "context": [{ "key": "terminus_view"}]
+},
+
+
+
+]
