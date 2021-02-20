@@ -397,3 +397,10 @@ map <C-t> :set nosplitright<CR>:TagbarToggle<CR>:set splitright<CR>
 
 
 set guifont=Hack\ 12
+
+nnoremap <buffer> H :<C-u>execute "!pydoc3 " . expand("<cword>")<CR>
+"let g:ycm_key_list_stop_completion = [ '<C-y>', '<Enter>' ]
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
+
+
+
