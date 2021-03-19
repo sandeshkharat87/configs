@@ -32,6 +32,13 @@ Plug 'sonph/onehalf'
 Plug 'yggdroot/indentline'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'rip-rip/clang_complete'
+Plug 'artur-shaik/vim-javacomplete2'
+Plug 'ParamagicDev/vim-medic_chalk'
+Plug 'sonph/onehalf'
+Plug 'scrooloose/nerdtree'
+Plug 'ervandew/eclim'
+Plug 'vim-scripts/indentpython.vim'
 
 "----------------------------------------------------
 call plug#end()
@@ -91,11 +98,7 @@ set t_vb=
 "set relativenumber
 set viminfo='20,<1000  " allow copying of more than 50 lines to other applications
 
-" easy split movement
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+
 
 " tabs:
 nnoremap tn :tabnew<Space>
@@ -377,10 +380,10 @@ function! SaveAndExecutePython()
 endfunction
 
 
-set background=dark
-colorscheme space-vim-dark
+"set background=dark
+"colorscheme space-vim-dark
 
-inoremap <C-a> <C-o>0
+inoremap <C-a> <C-o>^
 inoremap <C-e> <C-o>$
 inoremap <C-Enter> <C-o>o
 
@@ -389,18 +392,47 @@ set guioptions-=m  "menu bar
 set guioptions-=T  "toolbar
 
 " toggle nerdtree on ctrl+n
-map <C-n> :NERDTreeToggle<CR>
+map <C-/> :NERDTreeToggle<CR>
 map <C-t> :set nosplitright<CR>:TagbarToggle<CR>:set splitright<CR>
 
 
 
 
 
-set guifont=Hack\ 12
+"set guifont=Hack\ 11.5
 
-nnoremap <buffer> H :<C-u>execute "!pydoc3 " . expand("<cword>")<CR>
+
+set guifont=Ubuntu\ mono\ Regular\ 13
+
+"nnoremap <buffer> H :<C-u>execute "!pydoc3 " . expand("<cword>")<CR>
 "let g:ycm_key_list_stop_completion = [ '<C-y>', '<Enter>' ]
 inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
 
 
 
+set background=dark
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-c> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-n> :NERDTreeMirror<CR>:NERDTreeFocus<CR>
+
+" FOR JAVA
+"
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+nmap <F5> <Plug>(JavaComplete-Imports-Add)
+imap <F5> <Plug>(JavaComplete-Imports-Add)"
+nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)"
+imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+" END
+
+
+nmap <CRR-Enter> O<Esc>j
+nmap <CR> o<Esc>k
+
+
+set clipboard=unnamed
