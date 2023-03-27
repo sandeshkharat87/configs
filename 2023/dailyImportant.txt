@@ -8,6 +8,8 @@ use linux Xclip for sytemclipboard shortcut copy paste
 =DATE(2022, 4, 1)
 
 
+use nerd font to show icons on Terminal
+
 pop os default color #FBB86C
 
 -- Flameshot custom printscrn to take screenshot
