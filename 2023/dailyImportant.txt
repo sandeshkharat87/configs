@@ -1,0 +1,18 @@
+Use jumpapp apllication to jump between the most used apps
+syntax jumapp ->   jumpapp app_name
+
+if app is in sysTray then -> jumpapp -f app_name
+
+
+use linux Xclip for sytemclipboard shortcut copy paste
+=DATE(2022, 4, 1)
+
+
+pop os default color #FBB86C
+
+-- Flameshot custom printscrn to take screenshot
+flameshot full --clipboard --path /home/wpnx/Pictures/
+
+-- Flaeshot "winKey + K" to capture region of screenshot
+flameshot gui --clipboard
+
