@@ -9,3 +9,10 @@ use linux Xclip for sytemclipboard shortcut copy paste
 
 
 pop os default color #FBB86C
+
+-- Flameshot custom printscrn to take screenshot
+flameshot full --clipboard --path /home/wpnx/Pictures/
+
+-- Flaeshot "winKey + K" to capture region of screenshot
+flameshot gui --clipboard
+
