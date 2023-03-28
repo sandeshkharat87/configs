@@ -18,3 +18,6 @@ flameshot full --clipboard --path /home/wpnx/Pictures/
 -- Flaeshot "winKey + K" to capture region of screenshot
 flameshot gui --clipboard
 
+-- Create and get images polygon co-ords
+https://www.image-map.net/ 
+
