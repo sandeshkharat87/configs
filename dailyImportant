@@ -16,3 +16,5 @@ flameshot full --clipboard --path /home/wpnx/Pictures/
 -- Flaeshot "winKey + K" to capture region of screenshot
 flameshot gui --clipboard
 
+# copy to system clipboard
+pwd | xclip -rmlastnl -selection clipboard
